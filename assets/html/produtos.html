@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Meu Ateliê de Crochê</title>
+    <meta name="description" content="Catálogo completo de nossos produtos artesanais em crochê: amigurumis, chaveiros, toucas e roupas para pets.">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Meu Ateliê de Crochê</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-page">
+            <h1>Nossos Produtos</h1>
+            <p>Explore nosso catálogo completo de peças feitas à mão com muito carinho.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Mostrar Todos</button>
+                <button class="filter-btn" data-filter="amigurumi">Amigurumis</button>
+                <button class="filter-btn" data-filter="chaveiro">Chaveiros</button>
+                <button class="filter-btn" data-filter="touca">Toucas</button>
+                <button class="filter-btn" data-filter="pet">Roupas Pet</button>
+            </div>
+
+            <div class="product-grid-full">
+                <div class="product-card" data-category="amigurumi">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/amigurumi-polvo.jpg" alt="Polvo de Crochê Amigurumi">
+                        <h3>Polvo Amigurumi Colorido</h3>
+                    </a>
+                    <p class="price">R$ 79,90</p>
+                    <a href="https://mpago.la/link-produto-1" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+
+                <div class="product-card" data-category="touca">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/touca-inverno-preta.jpg" alt="Touca de Crochê Preta">
+                        <h3>Touca de Inverno Preta</h3>
+                    </a>
+                    <p class="price">R$ 65,00</p>
+                    <a href="https://mpago.la/link-produto-2" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+                
+                <div class="product-card" data-category="pet">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/roupa-pet-caozinho.jpg" alt="Roupa de Crochê para Cachorro">
+                        <h3>Roupinha Pet Estilosa</h3>
+                    </a>
+                    <p class="price">R$ 89,90</p>
+                    <a href="https://mpago.la/link-produto-3" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+
+                <div class="product-card" data-category="chaveiro">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/chaveiro-coracao.jpg" alt="Chaveiro de Coração em Crochê">
+                        <h3>Chaveiro de Coração</h3>
+                    </a>
+                    <p class="price">R$ 25,00</p>
+                    <a href="https://mpago.la/link-produto-4" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+
+                <div class="product-card" data-category="amigurumi">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/amigurumi-urso.jpg" alt="Urso de Crochê Amigurumi">
+                        <h3>Ursinho de Pelúcia Amigurumi</h3>
+                    </a>
+                    <p class="price">R$ 120,00</p>
+                    <a href="https://mpago.la/link-produto-5" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+
+                <div class="product-card" data-category="touca">
+                    <a href="produto-detalhe.html">
+                        <img src="assets/images/touca-colorida.jpg" alt="Touca de Crochê Colorida">
+                        <h3>Touca Listrada Colorida</h3>
+                    </a>
+                    <p class="price">R$ 75,00</p>
+                    <a href="https://mpago.la/link-produto-6" target="_blank" class="btn-buy">Comprar</a>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Ateliê de Crochê. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

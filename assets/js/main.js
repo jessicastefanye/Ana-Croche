@@ -15,3 +15,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+// Função para o filtro de produtos na página de produtos
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    // Verifica se os botões de filtro existem na página atual
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove a classe 'active' de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adiciona a classe 'active' ao botão clicado
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                productCards.forEach(card => {
+                    // Esconde o card para a animação
+                    card.classList.add('hide');
+
+                    // Mostra o card novamente se ele corresponder ao filtro
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        // Usamos um pequeno timeout para a animação de "fade" funcionar
+                        setTimeout(() => {
+                           card.classList.remove('hide');
+                        }, 10);
+                    }
+                });
+            });
+        });
+    }
+});

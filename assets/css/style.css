@@ -151,3 +151,118 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+/* Estilos da Página de Produtos */
+.products-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Estilos dos Botões de Filtro */
+.filter-buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Grade de Produtos da Página de Produtos */
+.product-grid-full {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Animação para o filtro */
+.product-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-card.hide {
+    transform: scale(0.9);
+    opacity: 0;
+    width: 0; /* Ajuda a reorganizar o layout */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Esconde o conteúdo do item que some */
+}
+/* Estilos da Página Sobre */
+.about-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1.5; /* Dando um pouco mais de espaço para o texto */
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+.about-text .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Deixa a página responsiva para celulares */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Coloca a imagem em cima do texto */
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 30px;
+    }
+}
